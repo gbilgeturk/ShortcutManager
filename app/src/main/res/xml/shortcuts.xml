@@ -1,0 +1,19 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="25">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_cappuccino"
+        android:shortcutId="cap"
+        android:shortcutShortLabel="@string/cappuccino"
+        android:shortcutLongLabel="@string/cappuccino_long_label"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.shortcutmanager.MainActivity"
+            android:data="@string/dummy_key"
+            android:targetPackage="com.example.shortcutmanager">
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

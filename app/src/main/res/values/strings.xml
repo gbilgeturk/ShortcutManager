@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Coffee</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="cappuccino_short_label">Cap</string>
+    <string name="cappuccino_long_label">Order Cappuccino</string>
+    <string name="cappuccino_success">Cappuccino is ready, enjoy your meal :)</string>
+    <string name="mocha">Mocha</string>
+    <string name="mocha_short_label">Moc</string>
+    <string name="mocha_long_label">Order Mocha</string>
+    <string name="mocha_success">Mocha is ready, enjoy your meal :)</string>
+    <string name="latte">Latte</string>
+    <string name="latte_short_label">Lat</string>
+    <string name="latte_long_label">Order Latte</string>
+    <string name="coffee_main">Welcome to Coffee Shop </string>
+    <string name="dummy_key">coffee</string>
+</resources>
