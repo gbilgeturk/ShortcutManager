@@ -15,18 +15,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        if (savedInstanceState == null) {
-            if (intent.data != null) {
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, CappuccinoFragment.newInstance())
-                    .commitNow()
-            } else {
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow()
-            }
+        intent.data?.let {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, CappuccinoFragment.newInstance())
+                .commitNow()
+        } ?: run {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, MainFragment.newInstance())
+                .commitNow()
         }
-
         createShortcut()
     }
 
