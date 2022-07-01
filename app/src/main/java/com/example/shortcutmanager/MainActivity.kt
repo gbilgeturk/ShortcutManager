@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             .setShortLabel(getString(R.string.mocha))
             .setLongLabel(getString(R.string.mocha_long_label))
             .setIcon(IconCompat.createWithResource(this, R.drawable.ic_mocha))
-            .setIntent(Intent(this, MochaActivity::class.java).setAction("action"))
+            .setIntent(Intent(this, MochaActivity::class.java).setAction("mochaAction"))
             .build()
 
         ShortcutManagerCompat.pushDynamicShortcut(this, shortcutInfo)
